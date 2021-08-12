@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id = "test">
+    <h1 id = "test">Flowers Gallery!!</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers Classifier</title>
+</head>
+
+<body id = "home"  >
+    <br><br>
+    <div id = "row">
+        <form action="{{ url_for('About')}}" method="post">
+            <div id = "column" >
+                <img  versicolor src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Blue_Flag%2C_Ottawa.jpg/900px-Blue_Flag%2C_Ottawa.jpg"   style="width:300px;height:300px;">
+                <br><a href=https://en.wikipedia.org/wiki/Iris_versicolor style="font-size: 50px;" target="_blank">Versicolor</a>
+            </div>
+            <div id = "column" >
+                <img Setosa src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg/800px-Kosaciec_szczecinkowaty_Iris_setosa.jpg" style="width:300px;height:300px;">
+                <br><a href="https://en.wikipedia.org/wiki/Iris_setosa" style="font-size: 50px;" target="_blank">Setosa</a>
+            </div>
+            <div id = "column">
+                <img Virginica src = "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Iris_virginica_2.jpg/330px-Iris_virginica_2.jpg" style="width:300px;height:300px;">
+                <br><a href="https://en.wikipedia.org/wiki/Iris_virginica" style="font-size: 50px;" target="_blank">Virginica</a>
+            </div>
+        </form>
+        
+    </div>
+
+    <div id = "home">
+
+        <form action="{{ url_for('Home')}}">
+            <br><br><br>
+            <button id = "sub">Home</button>
+    </div>
+    
+            
+
+    </form>
+</body>
+
+
+
+
+<style>
+#fieldo {
+    border-radius: 14px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 202, 202);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#home {
+
+    align-content: unset;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(37, 45, 94);
+}
+
+
+#test{
+
+    color: rgb(255, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    background-color: rgb(37, 45, 94);
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+#sub {
+            
+            text-align: center;
+            font-size: 22px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: darkblue;
+
+        }
+        
+        #sub:hover {
+            background-color: rgb(151, 255, 255);
+            font-size: 30px;
+
+            
+
+        }
+
+#column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+#row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+
+
+
+</html>

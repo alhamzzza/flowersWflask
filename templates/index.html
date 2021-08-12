@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id = "test">
+    <h1 id = "test">Welcome!!</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id = "home">
+    <div id="home">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h3> Enter the sepal length </h3><input id="fieldo" name="sepal_length" required="required ">
+            <h3> Enter the sepal width</h3><input id="fieldo" name="sepal_width" required="required">
+            <h3>Enter the petal length</h3><input id="fieldo" name="petal_length" required="required">
+            <h3>Enter the petal width</h3><input id="fieldo" name="petal_width" required="required">
+
+            <div>
+                <br><button id="sub" type="submit ">what is the flower type </button>
+                <h3 id = 'test'>{{ prediction_text }}<h3>
+            </div>
+
+        </form>
+
+
+        <div id ='test' >
+            <form action="{{ url_for('About')}}" method="post">
+                    <button id = "sub" type="submit ">{{ info_f }} </button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+
+
+
+
+<style>
+#fieldo {
+    border-radius: 14px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 202, 202);
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 6px;
+    
+}
+
+#home {
+
+    align-content: center;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(37, 45, 94);
+}
+
+
+#test{
+
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(37, 45, 94);
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+#sub {
+            width: 280;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 22px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: darkblue;
+
+        }
+        
+#sub:hover {
+            background-color: rgb(151, 255, 255);
+            font-size: 30px;
+
+
+            
+
+        }
+
+</style>
+
+
+
+</html>
